@@ -13,10 +13,10 @@ const Navbar = () => {
     const { setContentType } = useContentStore();
 
     return (
-        <header className='max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4 h-20'>
+        <header className='max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4 h-20 sticky top-0'>
             <div className='flex items-center gap-10 z-50'>
                 <Link to='/'>
-                    <img src='/logo.png' alt='Logo' className='w-16 sm:w-20' />
+                    <img src='/logo.png' alt='Logo' className="h-8 dark:brightness-0 dark:invert rotate-0 hover:rotate-320 transition-all ease-in-out duration-700" />
                 </Link>
 
                 {/* desktop navbar items */}
