@@ -1,5 +1,5 @@
 import User from "../models/user.model.js";
-import { fetchFromTMDB } from "../services/tmdb.service.js";
+import fetchFromTMDB  from "../services/tmdb.service.js";
 
 export const searchPerson = async (req, res) => {
   const { query } = req.params;

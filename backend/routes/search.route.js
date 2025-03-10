@@ -10,9 +10,9 @@ import {
 const router = express.Router();
 
 router.get("/person/:query", searchPerson)
-router.post("/movie/:query", searchMovie)
-router.post("/tv/:query", searchTv)
-router.post("/history", getSearchHistory)
-router.post("/history/:id", removeItemFromSearchHistory)
+router.get("/movie/:query", searchMovie)
+router.get("/tv/:query", searchTv)
+router.get("/history", getSearchHistory)
+router.delete("/history/:id", removeItemFromSearchHistory)
 
 export default router;
