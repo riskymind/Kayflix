@@ -15,15 +15,15 @@ const HomePage = () => {
 
   if (!trendingContent)
 		return (
-			<div className='h-screen text-white relative'>
+			<div className='h-screen text-white relative bg-rose-300'>
 				<Navbar />
-				{/* <div className='absolute top-0 left-0 w-full h-full bg-black/70 flex items-center justify-center -z-10 shimmer' /> */}
+				<div className='absolute top-0 left-0 w-full h-full bg-black/70 flex items-center justify-center -z-10 shimmer' />
 			</div>
 		);
 
     return (
       <>
-        <div className='relative h-screen text-white '>
+        <div className='h-screen text-white relative bg-blue-800'>
           <Navbar />
   
           {/* COOL OPTIMIZATION HACK FOR IMAGES */}
